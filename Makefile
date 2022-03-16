@@ -14,3 +14,7 @@ cylin.bin: linker.ld $(objects)
 
 install: cylin.bin
 	sudo cp $< /boot/cylin.bin
+
+remove:
+	rm kernel.o loader.o
+	sudo rm /boot/cylin.bin
